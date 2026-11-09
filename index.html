@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Путь к себе — голосовая метафорическая колода</title>
+  <meta name="description" content="Голосовая метафорическая колода: вытяни карту и получи короткий медитативный настрой. Слушай в наушниках. Бот в VK и Telegram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- 1. ПЕРВЫЙ ЭКРАН -->
+  <header class="hero">
+    <p class="eyebrow">Голосовая метафорическая колода</p>
+    <h1>Путь к себе</h1>
+    <div class="divider" aria-hidden="true"><span></span></div>
+    <p class="lead">Вытяни карту и получи свой медитативный настрой на день. Короткий образ, тёплые слова и аудио для наушников.</p>
+    <div class="buttons">
+      <a class="btn btn-gold" data-link="vk" href="#" target="_blank" rel="noopener">Бот в VK</a>
+      <a class="btn btn-line" data-link="tg" href="#" target="_blank" rel="noopener">Бот в Telegram</a>
+    </div>
+    <p class="note">Одна карта в подарок за подписку на VK-канал</p>
+  </header>
+
+  <main>
+    <!-- 2. КАК ЭТО РАБОТАЕТ -->
+    <section class="section" id="how">
+      <h2>Как это работает</h2>
+      <ol class="steps">
+        <li>
+          <span class="num">1</span>
+          <h3>Выбираешь карту</h3>
+          <p>Делаешь вдох, думаешь о своём дне и выбираешь одну из закрытых карт.</p>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <h3>Читаешь настрой</h3>
+          <p>Ситуация, короткий настрой и маленькая практика на сегодня.</p>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <h3>Слушаешь в наушниках</h3>
+          <p>Мини-медитация в бинауральном ритме и объёмном звуке.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 3. ДЕМО -->
+    <section class="section" id="demo">
+      <h2>Попробуй прямо здесь</h2>
+      <p class="section-sub">Это демонстрация: в ней две карты из 36 и нет звука. Всё остальное, включая аудио, в боте.</p>
+
+      <div class="demo" id="demo-box">
+        <div class="demo-choose" id="demo-choose">
+          <p class="hint">Сделай вдох. Подумай о своём дне и выбери карту</p>
+          <div class="fan" id="fan">
+            <button class="back" style="--r:-18deg;--x:-120px" aria-label="Выбрать карту"></button>
+            <button class="back" style="--r:-9deg;--x:-60px" aria-label="Выбрать карту"></button>
+            <button class="back" style="--r:0deg;--x:0px" aria-label="Выбрать карту"></button>
+            <button class="back" style="--r:9deg;--x:60px" aria-label="Выбрать карту"></button>
+            <button class="back" style="--r:18deg;--x:120px" aria-label="Выбрать карту"></button>
+          </div>
+        </div>
+
+        <article class="result" id="demo-result" hidden>
+          <div class="card-art" id="card-art" aria-hidden="true">
+            <img id="card-img" alt="" hidden>
+            <span class="card-art-name" id="card-art-name"></span>
+          </div>
+          <p class="block-name" id="card-block"></p>
+          <h3 class="card-title" id="card-title"></h3>
+          <div class="field"><span class="label">Ситуация</span><p id="card-situation"></p></div>
+          <div class="field big"><span class="label">Настрой</span><p id="card-mood"></p></div>
+          <div class="field"><span class="label">Практика на сегодня</span><p id="card-practice"></p></div>
+          <p class="note">В боте здесь будет кнопка «Послушать» с мини-медитацией.</p>
+          <button class="btn btn-line" id="again" type="button">Вытянуть заново</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. ДЛЯ КОГО -->
+    <section class="section" id="for">
+      <h2>Для кого эта колода</h2>
+      <ul class="list">
+        <li>Для тех, кто занимается саморазвитием и хочет начинать утро с мягкого настроя.</li>
+        <li>Для тех, кто устал «копать» себя и хочет один маленький шаг, а не ещё одну сложную практику.</li>
+        <li>Для тех, кто часто тянет всё на себе и ищет опору внутри.</li>
+        <li>Для тех, у кого на себя есть всего 5 минут.</li>
+      </ul>
+    </section>
+
+    <!-- 5. ЧТО ВНУТРИ -->
+    <section class="section" id="inside">
+      <h2>Что внутри</h2>
+      <div class="grid">
+        <div class="tile"><b>36 карт</b><span>6 блоков: от вины и права хотеть до опоры и первого шага</span></div>
+        <div class="tile"><b>Карта дня</b><span>Одна карта и один настрой на сегодня</span></div>
+        <div class="tile"><b>Расклад на 3 карты</b><span>Что меня держит, что важно понять, на что опереться</span></div>
+        <div class="tile"><b>Мини-медитация</b><span>В каждой карте: бинауральный ритм и объёмный звук</span></div>
+        <div class="tile"><b>Женский и мужской род</b><span>Обращение подстраивается под тебя</span></div>
+        <div class="tile"><b>Служба заботы</b><span>Если нужна помощь с ботом или оплатой, мы рядом</span></div>
+      </div>
+    </section>
+
+    <!-- 6. ТАРИФЫ -->
+    <section class="section" id="prices">
+      <h2>Тарифы</h2>
+      <div class="prices">
+        <div class="price">
+          <span class="price-name">Подарок</span>
+          <span class="price-sum">0 ₽</span>
+          <p>Одна случайная карта за подписку на VK-канал.</p>
+        </div>
+        <div class="price">
+          <span class="price-name">Неделя</span>
+          <span class="price-sum">2 500 ₽</span>
+          <p>7 дней доступа ко всей колоде.</p>
+        </div>
+        <div class="price featured">
+          <span class="price-name">Месяц</span>
+          <span class="price-sum">5 000 ₽</span>
+          <p>30 дней доступа ко всей колоде.</p>
+        </div>
+      </div>
+      <p class="section-sub">В подписке: до 3 раскладов и до 10 карт в день. Каждый день колода открывается заново.</p>
+      <div class="buttons">
+        <a class="btn btn-gold" data-link="vk" href="#" target="_blank" rel="noopener">Открыть бота в VK</a>
+        <a class="btn btn-line" data-link="tg" href="#" target="_blank" rel="noopener">Открыть бота в Telegram</a>
+      </div>
+    </section>
+
+    <!-- 7. ОБО МНЕ -->
+    <section class="section" id="about">
+      <h2>Обо мне</h2>
+      <div class="about">
+        <div class="photo" id="photo" aria-hidden="true"><img src="images/author.jpg" alt="" onerror="this.remove()"></div>
+        <div class="about-text">
+          <!-- ЗАМЕНИТЬ: имя и текст ниже -->
+          <h3>[Ваше имя]</h3>
+          <p>Я создала эту колоду для себя: хотелось начинать день с мягкого настроя и маленькой медитации, а не с тревоги и списка дел. Потом поняла, что она нужна и другим.</p>
+          <p>[Здесь расскажите о себе: чем занимаетесь, сколько лет в практике, почему появилась колода. Пара коротких абзацев.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ВОПРОСЫ -->
+    <section class="section" id="faq">
+      <h2>Частые вопросы</h2>
+      <details>
+        <summary>Что такое бинауральный ритм?</summary>
+        <p>Это особая запись звука: в левое и правое ухо идут чуть разные частоты. Поэтому слушать её нужно в наушниках. Вместе с объёмным звуком получается спокойная, погружающая атмосфера.</p>
+      </details>
+      <details>
+        <summary>Как слушать?</summary>
+        <p>Лучше в наушниках, в тихом месте, 3–5 минут. Не слушайте за рулём.</p>
+      </details>
+      <details>
+        <summary>Что я получу бесплатно?</summary>
+        <p>Одну случайную карту из 36. Нужно подписаться на VK-канал, и бот откроет колоду. Бесплатная карта выдаётся один раз.</p>
+      </details>
+      <details>
+        <summary>Как оформить подписку и оплатить?</summary>
+        <p>В боте выберите тариф: неделя или месяц. Оплата проходит прямо в боте, доступ открывается сразу.</p>
+      </details>
+      <details>
+        <summary>Сколько карт можно тянуть в день?</summary>
+        <p>С подпиской до 3 раскладов на три карты и до 10 карт в день. На следующий день лимит обновляется.</p>
+      </details>
+      <details>
+        <summary>Это заменяет психолога или врача?</summary>
+        <p>Нет. Колода — это мягкая практика и настрой, а не лечение и не психотерапия. Если вам тяжело, обратитесь к специалисту.</p>
+      </details>
+      <details>
+        <summary>Как обращаться: на «ты» к женщине или к мужчине?</summary>
+        <p>В начале бот спрашивает, как к вам обращаться: в женском или мужском роде. Выбор можно поменять в настройках.</p>
+      </details>
+    </section>
+
+    <!-- 9. ФИНАЛ -->
+    <section class="section final">
+      <h2>Начни свой путь к себе</h2>
+      <p class="lead">Одна карта в подарок. Три минуты в наушниках.</p>
+      <div class="buttons">
+        <a class="btn btn-gold" data-link="vk" href="#" target="_blank" rel="noopener">Бот в VK</a>
+        <a class="btn btn-line" data-link="tg" href="#" target="_blank" rel="noopener">Бот в Telegram</a>
+      </div>
+      <p class="note"><a data-link="vkchannel" href="#" target="_blank" rel="noopener">Канал в VK</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Колода «Путь к себе» не заменяет медицинскую или психологическую помощь. Не слушайте медитации за рулём.</p>
+    <p>© <span id="year">2026</span> [Ваше имя]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
