@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261123-3">
+  <link rel="stylesheet" href="style.css?v=20261123-4">
 </head>
 <body>
   <div class="stars" aria-hidden="true"></div>
@@ -18,7 +18,7 @@
     <p class="eyebrow">Голосовая метафорическая колода</p>
     <h1>Путь к себе</h1>
     <div class="divider" aria-hidden="true"><span></span></div>
-    <p class="lead">Вытяни карту и получи свой медитативный настрой на день. Короткий образ, тёплые слова и аудио для наушников.</p>
+    <p class="lead">Вытяни карту и прочитай свой настрой на день. Полное оформление колоды и авторские записи готовятся к публикации.</p>
     <div class="buttons">
       <a class="btn btn-gold" data-link="vk" href="#" target="_blank" rel="noopener">Бот в VK</a>
       <a class="btn btn-line" data-link="tg" href="#" target="_blank" rel="noopener">Бот в Telegram</a>
@@ -43,8 +43,8 @@
         </li>
         <li>
           <span class="num">3</span>
-          <h3>Слушаешь в наушниках</h3>
-          <p>Нажимаешь «Озвучить карту» и слушаешь её текст и практику.</p>
+          <h3>Пробуешь практику</h3>
+          <p>Выбираешь один небольшой шаг на сегодня.</p>
         </li>
       </ol>
     </section>
@@ -68,18 +68,11 @@
         </div>
 
         <article class="result" id="demo-result" hidden>
-          <div class="card-art" id="card-art" aria-hidden="true">
-            <img id="card-img" alt="">
-            <span class="card-art-name" id="card-art-name"></span>
-          </div>
           <p class="block-name" id="card-block"></p>
           <h3 class="card-title" id="card-title"></h3>
           <div class="field"><span class="label">Ситуация</span><p id="card-situation"></p></div>
           <div class="field big"><span class="label">Настрой</span><p id="card-mood"></p></div>
           <div class="field"><span class="label">Практика на сегодня</span><p id="card-practice"></p></div>
-          <button class="btn btn-gold listen-button" id="listen-card" type="button">▶ Озвучить карту</button>
-          <audio id="card-audio" controls preload="none" aria-label="Озвученная карта"></audio>
-          <p class="audio-status" id="audio-status" role="status" aria-live="polite"></p>
           <button class="btn btn-line" id="again" type="button">Вытянуть заново</button>
         </article>
         <div id="spread-result" class="spread-result" hidden></div>
@@ -104,9 +97,9 @@
         <div class="tile"><b>36 карт</b><span>6 блоков: от вины и права хотеть до опоры и первого шага</span></div>
         <div class="tile"><b>Карта дня</b><span>Одна карта и один настрой на сегодня</span></div>
         <div class="tile"><b>Расклад на 3 карты</b><span>Что меня держит, что важно понять, на что опереться</span></div>
-        <div class="tile"><b>Мини-медитация</b><span>Аудионастрой для каждой карты</span></div>
-        <div class="tile"><b>Женский и мужской род</b><span>Обращение подстраивается под тебя</span></div>
-        <div class="tile"><b>Служба заботы</b><span>Если нужна помощь с ботом или оплатой, мы рядом</span></div>
+        <div class="tile"><b>Авторские записи</b><span>Будут добавлены вместе с иллюстрациями</span></div>
+        <div class="tile"><b>Тексты колоды</b><span>36 настроев и практик в женском роде</span></div>
+        <div class="tile"><b>В своём ритме</b><span>Возвращайтесь к текстам карт и практикам когда удобно</span></div>
       </div>
     </section>
 
@@ -130,7 +123,7 @@
           <p>Планируемый тариф; оплата пока не подключена.</p>
         </div>
       </div>
-      <p class="section-sub">Все карты, аудио и расклады сейчас доступны на сайте. Тарифы и боты готовятся к запуску.</p>
+      <p class="section-sub">Тексты карт и расклады доступны на сайте. Авторские изображения и записи, тарифы и боты готовятся к запуску.</p>
       <div class="buttons">
         <a class="btn btn-gold" data-link="vk" href="#" target="_blank" rel="noopener">Открыть бота в VK</a>
         <a class="btn btn-line" data-link="tg" href="#" target="_blank" rel="noopener">Открыть бота в Telegram</a>
@@ -155,20 +148,20 @@
     <section class="section" id="faq">
       <h2>Частые вопросы</h2>
       <details>
-        <summary>Что звучит в аудио?</summary>
-        <p>У каждой карты есть русская речевая озвучка её текста и практики. Нажмите «Озвучить карту» после выбора карты.</p>
+        <summary>Когда появятся изображения и аудио?</summary>
+        <p>Авторские изображения и записи будут добавлены после загрузки исходных файлов в проект.</p>
       </details>
       <details>
         <summary>Как слушать?</summary>
-        <p>В тихом месте, с комфортной громкостью. Не слушайте за рулём.</p>
+        <p>Когда авторские записи появятся на сайте, слушайте их в тихом месте и с комфортной громкостью. Не слушайте за рулём.</p>
       </details>
       <details>
         <summary>Что я получу бесплатно?</summary>
-        <p>Одну случайную карту из 36. Нужно подписаться на VK-канал, и бот откроет колоду. Бесплатная карта выдаётся один раз.</p>
+        <p>Сейчас на сайте можно читать все 36 текстов карт, открывать карту дня и делать расклады без оплаты.</p>
       </details>
       <details>
         <summary>Как оформить подписку и оплатить?</summary>
-        <p>Подключение оплаты готовится. Пока карты и аудио доступны на сайте.</p>
+        <p>Подключение оплаты готовится. Пока тексты карт доступны на сайте.</p>
       </details>
       <details>
         <summary>Сколько карт можно тянуть в день?</summary>
@@ -187,7 +180,7 @@
     <!-- 9. ФИНАЛ -->
     <section class="section final">
       <h2>Начни свой путь к себе</h2>
-      <p class="lead">36 карт и аудионастрои доступны здесь.</p>
+      <p class="lead">36 текстов карт и расклады доступны здесь.</p>
       <div class="buttons">
         <a class="btn btn-gold" data-link="vk" href="#" target="_blank" rel="noopener">Бот в VK</a>
         <a class="btn btn-line" data-link="tg" href="#" target="_blank" rel="noopener">Бот в Telegram</a>
@@ -202,6 +195,6 @@
   </footer>
 
   <script src="cards-data.js?v=20261123-3"></script>
-  <script src="script.js?v=20261123-3"></script>
+  <script src="script.js?v=20261123-4"></script>
 </body>
 </html>
