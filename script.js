@@ -39,7 +39,8 @@ const entries = [
 ['Продолжать','После трудного дня хочется сдаться.','Я могу отдохнуть и вернуться к важному.','Назначь время для следующего шага.'],
 ['Открытая дверь','Путь кажется только один.','Я открыта возможностям и выбираю своё.','Заметь новую возможность сегодня.']
 ];
-const CARDS = entries.map(([title,situation,mood,practice], i) => ({id:i+1,title,situation,mood,practice,block:`Блок ${Math.floor(i/6)+1} · ${groups[Math.floor(i/6)]}`,image:`images/card-${String(i+1).padStart(2,'0')}.svg`,audio:`audio/card-${String(i+1).padStart(2,'0')}.mp3`}));
+const MEDIA_VERSION = '20261123-2';
+const CARDS = entries.map(([title,situation,mood,practice], i) => ({id:i+1,title,situation,mood,practice,block:`Блок ${Math.floor(i/6)+1} · ${groups[Math.floor(i/6)]}`,image:`images/card-${String(i+1).padStart(2,'0')}.svg?v=${MEDIA_VERSION}`,audio:`audio/card-${String(i+1).padStart(2,'0')}.mp3?v=${MEDIA_VERSION}`}));
 const byId = id => CARDS.find(c => c.id === Number(id));
 const result = document.getElementById('demo-result');
 const choose = document.getElementById('demo-choose');
@@ -68,7 +69,7 @@ bindListen(listenCard, player, audioStatus);
 function randomCards(count, exclude=[]) { const pool=CARDS.filter(c=>!exclude.includes(c.id)); for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];} return pool.slice(0,count); }
 function show(card) {
   stopAudio(); spread.hidden=true; audioStatus.textContent='';
-  const img=document.getElementById('card-img'); img.src=card.image; img.alt=`Иллюстрация карты «${card.title}»`;
+  const img=document.getElementById('card-img'); img.hidden=false; img.src=card.image; img.alt=`Иллюстрация карты «${card.title}»`;
   document.getElementById('card-art-name').textContent=card.title;
   for(const field of ['title','block','situation','mood','practice']) document.getElementById(`card-${field}`).textContent=card[field];
   player.src=card.audio; player.setAttribute('aria-label',`Аудио карты ${card.title}`);
