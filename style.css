@@ -213,6 +213,8 @@ details p { margin: 0; padding: 0 18px 18px; color: var(--muted); }
 .reading-actions button { min-height: 48px; }
 .card-art img[hidden] { display: none; }
 .result audio, .reading-card audio { display: block; width: 100%; margin: 18px 0; accent-color: var(--gold); }
+.listen-button { display: block; width: 100%; margin-top: 18px; text-align: center; }
+.audio-status { min-height: 1.5em; color: var(--muted); font-size: .82rem; text-align: center; }
 .spread-result { display: grid; gap: 24px; margin-top: 24px; text-align: left; }
 .spread-result[hidden], [hidden] { display: none !important; }
 .reading-card { display: grid; grid-template-columns: 150px 1fr; gap: 20px; align-items: start; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.03); }

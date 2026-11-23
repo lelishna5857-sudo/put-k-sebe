@@ -44,7 +44,7 @@
         <li>
           <span class="num">3</span>
           <h3>Слушаешь в наушниках</h3>
-          <p>Короткий инструментальный аудионастрой для каждой карты.</p>
+          <p>Нажимаешь «Озвучить карту» и слушаешь её текст и практику.</p>
         </li>
       </ol>
     </section>
@@ -77,7 +77,9 @@
           <div class="field"><span class="label">Ситуация</span><p id="card-situation"></p></div>
           <div class="field big"><span class="label">Настрой</span><p id="card-mood"></p></div>
           <div class="field"><span class="label">Практика на сегодня</span><p id="card-practice"></p></div>
-          <audio id="card-audio" controls preload="none" aria-label="Аудио карты"></audio>
+          <button class="btn btn-gold listen-button" id="listen-card" type="button">▶ Озвучить карту</button>
+          <audio id="card-audio" controls preload="none" aria-label="Озвученная карта"></audio>
+          <p class="audio-status" id="audio-status" role="status" aria-live="polite"></p>
           <button class="btn btn-line" id="again" type="button">Вытянуть заново</button>
         </article>
         <div id="spread-result" class="spread-result" hidden></div>
@@ -154,7 +156,7 @@
       <h2>Частые вопросы</h2>
       <details>
         <summary>Что звучит в аудио?</summary>
-        <p>У каждой карты есть свой короткий инструментальный звуковой настрой без речи. Его можно слушать в браузере.</p>
+        <p>У каждой карты есть русская речевая озвучка её текста и практики. Нажмите «Озвучить карту» после выбора карты.</p>
       </details>
       <details>
         <summary>Как слушать?</summary>
