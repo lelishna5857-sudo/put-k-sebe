@@ -231,3 +231,17 @@ details p { margin: 0; padding: 0 18px 18px; color: var(--muted); }
 }
 
 .original-card { display: block; max-width: 100%; height: auto; margin: 0 auto 1rem; }
+
+#reading { display: grid; gap: 1rem; margin: auto; max-width: 32rem; }
+#reading.three { max-width: none; }
+#reading .reading-card { align-content: start; justify-items: center; text-align: left; min-width: 0; }
+#reading .reading-card > div { width: 100%; }
+.turn { position: relative; width: min(100%, 10rem); aspect-ratio: 2/3; border: 0; padding: 0; background: transparent; cursor: pointer; perspective: 800px; }
+.turn > span { position: absolute; inset: 0; display: grid; place-items: center; backface-visibility: hidden; border: 1px solid var(--gold-deep); border-radius: 12px; overflow: hidden; color: var(--gold); font: 1.15rem var(--serif); transition: transform .55s ease; }
+.turn-back { background: radial-gradient(ellipse, #24366a, #0a1233); }
+.turn-face { transform: rotateY(180deg); background: var(--bg-2); }
+.turn.opened { cursor: default; }
+.turn.opened .turn-back { transform: rotateY(-180deg); }
+.turn.opened .turn-face { transform: rotateY(0deg); }
+#reading .turn-face img { width: 100%; height: 100%; object-fit: contain; border: none; }
+@media (min-width: 660px) { #reading.three { grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; } }
