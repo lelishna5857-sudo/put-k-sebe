@@ -229,3 +229,5 @@ details p { margin: 0; padding: 0 18px 18px; color: var(--muted); }
   .reading-card h3, .reading-card .block-name { text-align: center; }
   .reading-actions .btn { width: 100%; }
 }
+
+.original-card { display: block; max-width: 100%; height: auto; margin: 0 auto 1rem; }
