@@ -9,7 +9,9 @@ const choose = document.getElementById('demo-choose');
 const result = document.getElementById('demo-result');
 const spread = document.getElementById('spread-result');
 // Заполняется по номеру карты после сверки авторских файлов.
-const cardMedia = {};
+const cardMedia = {
+  24: { audio: 'audio/goal-original.mp3' }
+};
 let lastId = 0;
 
 function stopPlayback() {
@@ -97,3 +99,6 @@ document.querySelectorAll('[data-link]').forEach(link=>{
   if(url)link.href=url;
   else{link.removeAttribute('href');link.removeAttribute('target');link.setAttribute('aria-disabled','true');link.title='Ссылка скоро появится';}
 });
+
+const linkedCard = byId(new URLSearchParams(location.search).get('card'));
+if (linkedCard) show(linkedCard);
