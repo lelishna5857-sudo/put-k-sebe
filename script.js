@@ -7,7 +7,7 @@ const CARDS = CARDS_DATA.map(([title,situation,mood,practice], index) => ({
 const byId = id => CARDS.find(card => card.id === Number(id));
 // Заполняется по номеру карты после сверки авторских файлов.
 const cardMedia = {
-  24: { audio: 'audio/goal-original.mp3' }
+  24: { image: 'images/IMG_20261123_214127_702.jpg', audio: 'audio/goal-original.mp3' }
 };
 let lastId = 0;
 
